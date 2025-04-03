@@ -15,16 +15,19 @@ class Program
 
         DisplayResult(userName,square);
     }
+    
     static void DisplayWelcome()
     {
         Console.WriteLine("Welcome to the Program!");
     }
+
     static string PromptUserName()
     {
         Console.Write("Please enter your name: ");
         string userName = Console.ReadLine();
         return userName;
     }
+
     static int PromptUserNumber()
     {
         Console.Write("What is your favorite number? ");
@@ -32,11 +35,13 @@ class Program
         int favoriteNumber = int.Parse(favoriteNumberString);
         return favoriteNumber;
     }
+
     static int SquareNumber(int favoriteNumber)
     {
         int square = favoriteNumber * favoriteNumber;
         return square;
     }
+
     static void DisplayResult(string userName, int square)
     {
         Console.WriteLine($"{userName}, the square of your number is {square}");
